@@ -32,11 +32,13 @@ namespace Assignment.Scripts.Managers
         private void SubscribeEvents()
         {
             GlobalEventHandler.OnCountdownEnded += HandleCountdownEnded;
+            GlobalEventHandler.OnPlayerOutOfBounds += OnPlayerOutOfBounds;
         }
 
         private void UnsubscribeEvents()
         {
             GlobalEventHandler.OnCountdownEnded -= HandleCountdownEnded;
+            GlobalEventHandler.OnPlayerOutOfBounds -= OnPlayerOutOfBounds;
         }
 
         private void SpawnPlayer()
@@ -54,6 +56,22 @@ namespace Assignment.Scripts.Managers
         {
             Debug.Log("GAME OVER");
 
+            // Future:
+            // Disable input
+            // Show UI
+            // Stop gameplay
+        }
+
+        private void OnPlayerOutOfBounds()
+        {
+            Debug.Log("GAME OVER");
+
+            CharacterController controller =
+                currentPlayer.GetComponent<CharacterController>();
+
+            if (controller != null)
+                controller.enabled = false;
+            
             // Future:
             // Disable input
             // Show UI

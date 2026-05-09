@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf66c854-a912-4a8e-bf9a-9c246fa48c45" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/Bounds/DangerIndicatorVisualizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/Bounds/DangerIndicatorVisualizer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/HUD/TargetDirectionSolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/HUD/TargetDirectionSolver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/HUD/TargetDirectionVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/HUD/TargetDirectionVisualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/d7/c7e9543c/Action`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Art.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/Bounds/DangerIndicatorVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GlobalEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Player/Gravity/GravityController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Player/PlayerCharacterController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,10 +80,10 @@
 }</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1778763958357" />
-    <option name="spentUsd" value="0.13196875" />
+    <option name="spentUsd" value="0.273279" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="7" />
+    <option name="suspendCountdown" value="2" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
@@ -131,7 +133,7 @@
       <workItem from="1778310187438" duration="9000" />
       <workItem from="1778310382687" duration="8865000" />
       <workItem from="1778330385653" duration="879000" />
-      <workItem from="1778337104985" duration="5747000" />
+      <workItem from="1778337104985" duration="10364000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -149,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778342374263</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished TargetDirectionSolver.cs and TargetDirectionVisualizer.cs">
+      <option name="closed" value="true" />
+      <created>1778346381453</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778346381453</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +177,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="added target direction solver" />
-    <option name="LAST_COMMIT_MESSAGE" value="added target direction solver" />
+    <MESSAGE value="finished TargetDirectionSolver.cs and TargetDirectionVisualizer.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished TargetDirectionSolver.cs and TargetDirectionVisualizer.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
