@@ -1,4 +1,3 @@
-using System;
 using Assignment.Scripts.Player.Camera;
 using UnityEngine;
 using Assignment.Scripts.Player.Gravity;

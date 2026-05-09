@@ -1,5 +1,6 @@
 using System;
 using Assignment.Scripts.Gameplay;
+using Assignment.Scripts.Player;
 
 public static class GlobalEventHandler
 {
@@ -7,7 +8,7 @@ public static class GlobalEventHandler
     public static Action<float> OnCountdownTick;
     public static Action OnCountdownEnded;
 
-    public static Action OnPlayerSpawned;
+    public static Action<PlayerReferences> OnPlayerSpawned;
 
     public static Action OnPlayerOutOfBounds;
 

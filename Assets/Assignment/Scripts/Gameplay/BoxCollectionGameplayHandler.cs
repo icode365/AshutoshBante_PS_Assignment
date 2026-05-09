@@ -6,15 +6,13 @@ namespace Assignment.Scripts.Gameplay
 {
     public class BoxCollectionGameplayHandler : MonoBehaviour
     {
-        [SerializeField] private List<BoxCollectible> collectibles =
-            new List<BoxCollectible>();
+        [SerializeField] private List<BoxCollectible> collectibles = new();
 
-        private Queue<BoxCollectible> collectibleQueue =
-            new Queue<BoxCollectible>();
+        private Queue<BoxCollectible> collectibleQueue = new();
 
         public BoxCollectible CurrentTarget { get; private set; }
 
-        private void Awake()
+        private void Start()
         {
             InitializeQueue();
         }
@@ -59,6 +57,7 @@ namespace Assignment.Scripts.Gameplay
             CurrentTarget = collectibleQueue.Dequeue();
 
             CurrentTarget.SetActiveState(true);
+            GlobalEventHandler.OnTargetChanged?.Invoke(CurrentTarget);
         }
     }
 }
