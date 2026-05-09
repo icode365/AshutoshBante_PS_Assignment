@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cf66c854-a912-4a8e-bf9a-9c246fa48c45" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/Gravity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/Gravity/GravityController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/Gravity/GravityController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/PlayerCharacterController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/PlayerCharacterController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/BlocksPanelSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/BlocksPanelSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/BlocksRuntimeTheme.tss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/BlocksRuntimeTheme.tss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites/card-component.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites/card-component.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites/chat-message.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites/chat-message.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites/chat-message.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites/chat-message.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites/numeric-list-element.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/composites/numeric-list-element.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/buttons.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/buttons.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/copy-session--header.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/copy-session--header.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/core.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/core.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/icons.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/icons.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/inputs.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/inputs.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/labels.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/labels.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/list-view.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/list-view.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/modals.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/modals.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/progressbar.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/progressbar.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/scroll-view.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/scroll-view.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/utilities.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/stylesheets/utilities.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_copy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_machinegun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_machinegun.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_pistol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_pistol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_rocketlauncher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_rocketlauncher.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_speaker.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_speaker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_speaker_active.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_speaker_active.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_triangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_triangle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/icon_x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Content/textures/thumbnail.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Prefabs/UnityServices.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Prefabs/UnityServices.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Runtime/Blocks.Common.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Runtime/Blocks.Common.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Runtime/BlocksTheme.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Common/Runtime/BlocksTheme.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Prefabs/UnityServicesWithName.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Prefabs/UnityServicesWithName.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/Blocks.Sessions.Common.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/Blocks.Sessions.Common.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/CopySessionCode.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/CopySessionCode/CopySessionCodeElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/CopySessionCode/CopySessionCodeElement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/CopySessionCode/CopySessionCodeViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/CopySessionCode/CopySessionCodeViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/LeaveSession.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/LeaveSession/LeaveSessionButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/LeaveSession/LeaveSessionButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/LeaveSession/LeaveSessionViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/LeaveSession/LeaveSessionViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerCount.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerCount/PlayerCountLabel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerCount/PlayerCountLabel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerCount/PlayerCountViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerCount/PlayerCountViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerList.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerList/PlayerListViewElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerList/PlayerListViewElement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerList/PlayerListViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerList/PlayerListViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerList/PlayerViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerList/PlayerViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerName.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerName/PlayerNameLabel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerName/PlayerNameLabel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerName/PlayerNameViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/PlayerName/PlayerNameViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionInfo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionInfo/SessionInfoElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionInfo/SessionInfoElement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionInfo/SessionInfoViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionInfo/SessionInfoViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionName.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionName/SessionNameLabel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionName/SessionNameLabel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionName/SessionNameViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionName/SessionNameViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionStatus.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionStatus/SessionStatusLabel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionStatus/SessionStatusLabel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionStatus/SessionStatusViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/Runtime/SessionStatus/SessionStatusViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/UI/CurrentSession.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/UI/CurrentSession.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/UI/SessionInfo.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/CommonSession/UI/SessionInfo.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/Blocks.Sessions.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/Blocks.Sessions.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/CreateSession.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/CreateSession/CreateSessionElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/CreateSession/CreateSessionElement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/CreateSession/CreateSessionViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/CreateSession/CreateSessionViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/JoinSessionByCode.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/JoinSessionByCode/JoinSessionByCodeElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/JoinSessionByCode/JoinSessionByCodeElement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/JoinSessionByCode/JoinSessionByCodeViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/JoinSessionByCode/JoinSessionByCodeViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/QuickJoin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/QuickJoin/QuickJoinButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/QuickJoin/QuickJoinButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/QuickJoin/QuickJoinSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/QuickJoin/QuickJoinSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/QuickJoin/QuickJoinViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/QuickJoin/QuickJoinViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/SessionBrowser.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/SessionBrowser/SessionBrowserElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/SessionBrowser/SessionBrowserElement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/SessionBrowser/SessionBrowserViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/SessionBrowser/SessionBrowserViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/SessionBrowser/SessionInfoViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Runtime/SessionBrowser/SessionInfoViewModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByBrowsing.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByBrowsing.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByBrowsing.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByBrowsing/JoinByBrowsing.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByBrowsing/JoinByBrowsing.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByCode.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByCode.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByCode.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByCode/JoinByCodeScene.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/JoinByCode/JoinByCodeScene.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoin.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoin.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoin/QuickJoin.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoin/QuickJoin.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoinDebug.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoinDebug.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoinDebug.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoinDebug/QuickJoinDebug.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Scenes/QuickJoinDebug/QuickJoinDebug.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Settings/QuickJoinSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Settings/QuickJoinSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Settings/SessionSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/Settings/SessionSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/UI/JoinSessionByCode.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/UI/JoinSessionByCode.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/UI/JoinSessionByQuickJoin.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/UI/JoinSessionByQuickJoin.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/UI/SessionBrowser.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/MultiplayerSession/UI/SessionBrowser.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn135L.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn135L.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn135R.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn135R.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn180L.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn180L.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn180R.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn180R.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn45L.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn45L.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn45R.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn45R.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn90L.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn90L.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn90R.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Idle_Turn90R.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_JumpInAir_Launched.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_JumpInAir_Launched.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Jump_Land.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Armature_Jump_Land.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Idle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Idle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Jump.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Jump.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Jump_InAir.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Jump_InAir.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Run_Bwd.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Run_Bwd.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Run_Fwd.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Run_Fwd.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Walk.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Custom/Walk.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Jump--InAir.anim.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Jump--InAir.anim.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Jump--Jump.anim.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Jump--Jump.anim.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Run_N.anim.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Run_N.anim.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Run_N_Land.anim.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Run_N_Land.anim.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Run_S.anim.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Run_S.anim.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Walk_N.anim.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Walk_N.anim.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Walk_N_Land.anim.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Locomotion--Walk_N_Land.anim.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Stand--Idle.anim.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Animations/Default/Stand--Idle.anim.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Armature.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Armature.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Box_350x250x200_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Box_350x250x200_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Box_350x250x300_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Box_350x250x300_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Ground_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Ground_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Ramp_100x100x200_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Ramp_100x100x200_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Ramp_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Ramp_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Stairs_200x100x200_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Stairs_200x100x200_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Stairs_650_400_300_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Stairs_650_400_300_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Structure_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Structure_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Tunnel_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Tunnel_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Models/Wall_Mesh.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Models/Wall_Mesh.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Materials/Flame02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Materials/Flame02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/BigExplosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/BigExplosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/DustExplosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/DustExplosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/EnergyExplosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/EnergyExplosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/FireBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/FireBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/FlameStream.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/FlameStream.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/FlameThrower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/FlameThrower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/LargeFlames.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/LargeFlames.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/MediumFlames.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/MediumFlames.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/SmallExplosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/SmallExplosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/TinyExplosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/TinyExplosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/TinyFlames.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/TinyFlames.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/WildFire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Prefabs/WildFire.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Debris.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Debris.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/DebrisParticleSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/DebrisParticleSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/EnergyEffect.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/EnergyEffect.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Explosion.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Explosion.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/ExplosionEmission.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/ExplosionEmission.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/FireBallEmission.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/FireBallEmission.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/FireExplosion.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/FireExplosion.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Fireball.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Fireball.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Flame02.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Flame02.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Flame03.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Flame03.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Flame04.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Flame04.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/FlameParticleSheet.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/FlameParticleSheet.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/FlameRoundParticleSheet.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/FlameRoundParticleSheet.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/LargeFlame01.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/LargeFlame01.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/LargeFlame02.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/LargeFlame02.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Lightning.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Lightning.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/LightningParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/LightningParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/LightningTrail.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/LightningTrail.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/MediumFlame01.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/MediumFlame01.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/MediumFlame01Emission.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/MediumFlame01Emission.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/MediumFlame03.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/MediumFlame03.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/MedumFlame02.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/MedumFlame02.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Ramp02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Ramp02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Ramp03.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/Ramp03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/RoundSoftParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/RoundSoftParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuff01.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuff01.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuff02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuff02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuff02ParticleSheet.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuff02ParticleSheet.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuffNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuffNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuffNormalSheet.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuffNormalSheet.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuffParticleSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SmokePuffParticleSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SphereNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/SphereNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/TinyFlame.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/TinyFlame.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/TinyStones.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/TinyStones.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/ramp01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/ramp01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/shockwave.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Fire &amp; Explosion Effects/Textures/shockwave.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Prefabs/ElectricalSparksEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Prefabs/ElectricalSparksEffect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Prefabs/SparksEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Prefabs/SparksEffect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Prefabs/WaterFall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Prefabs/WaterFall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/FlameRoundGreyParticleSheet.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/FlameRoundGreyParticleSheet.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/ImpactSplashParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/ImpactSplashParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterDropParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterDropParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterMistSoftParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterMistSoftParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterRippleEdgeParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterRippleEdgeParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterRipplesParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterRipplesParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterfallDropTexture.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterfallDropTexture.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Animations.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Animations/@EllenIdle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Animations/@EllenIdle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Animations/Ellen.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Animations/Ellen.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Materials/FireFly.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Materials/FireFly.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Materials/SandSwirls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Materials/SandSwirls.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models/Candle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models/Candle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models/Ellen.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models/Ellen.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models/FireFly.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models/FireFly.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models/Flakes.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Models/Flakes.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/Candles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/Candles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/Dissolve.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/Dissolve.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/DissolveSolidHorizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/DissolveSolidHorizontal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/ElectricalSparks.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/ElectricalSparks.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/EllenDissolve.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/EllenDissolve.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/EllenRespawn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/EllenRespawn.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/FireFlies.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/FireFlies.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/HeatDistortion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/HeatDistortion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/ParticlesLight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/ParticlesLight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/Respawn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Prefabs/Respawn.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders/Dissolve.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders/Dissolve.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders/DissolveLine.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders/DissolveLine.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders/HeatDisstortionWobble.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders/HeatDisstortionWobble.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders/Respawn.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Shaders/Respawn.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/CandleFlame.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/CandleFlame.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/Clouds01.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/Clouds01.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/Clouds02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/Clouds02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/DissolveChunks.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/DissolveChunks.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/DustMote.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/DustMote.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/DustMoteParticle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/DustMoteParticle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/DustPuffSmall.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/DustPuffSmall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyEmission.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyEmission.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyWings.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyWings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Albedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Albedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Normal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Normal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Opt.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Opt.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/Ramp01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/Ramp01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/SmokePuff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/SmokePuff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/SmokeySteam.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/SmokeySteam.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/SparkParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/SparkParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/Stripes.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/Stripes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/noise.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Misc Effects/Textures/noise.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Models.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Models.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Models/RockDebris.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Models/RockDebris.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/DustStorm.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/DustStorm.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/GroundFog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/GroundFog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/HeatDistortion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/HeatDistortion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/PoisonGas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/PoisonGas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/PressurisedSteam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/PressurisedSteam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/RisingSteam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/RisingSteam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/RocketTrail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/RocketTrail.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/SmokeEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/SmokeEffect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/Steam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Prefabs/Steam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/Flame01.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/Flame01.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/SmokeLoop01.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/SmokeLoop01.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/SmokeLoop02.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/SmokeLoop02.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/SmokePuff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/SmokePuff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/SmokePuffNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/SmokePuffNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/TinyStones.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/TinyStones.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/Twinkle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/Twinkle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/WispySmokeNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/WispySmokeNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/smokeysteam.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/smokeysteam.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/wispySmoke.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Smoke &amp; Steam Effects/Textures/wispySmoke.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Materials/GoopMist.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Materials/GoopMist.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/FleshImpacts.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/FleshImpacts.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MetalImpacts.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MetalImpacts.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MuzzleFlash.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MuzzleFlash.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/SandImpacts.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/SandImpacts.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/StoneImpacts.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/StoneImpacts.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/WoodImpacts.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Prefabs/WoodImpacts.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BloodSprayAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BloodSprayAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BloodStreakAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BloodStreakAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BloodStreakNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BloodStreakNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockHeight.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockHeight.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/DustPuffSmallParticleSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/DustPuffSmallParticleSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FlashParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FlashParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleHeight.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleHeight.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopSprayAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopSprayAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopSprayNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopSprayNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopStreakAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopStreakAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopStreakNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopStreakNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/MuzzleFlashFront.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/MuzzleFlashFront.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/SandDecalAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/SandDecalAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/SandDecalNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/SandDecalNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/SparkParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/SparkParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/StoneAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/StoneAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/StoneNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/StoneNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/StreamNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/StreamNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/StreamNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/StreamNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStones.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStones.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStonesNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStonesNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStonesNormalsSheet.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStonesNormalsSheet.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStonesParticleSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStonesParticleSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WaterDropsParticle.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WaterDropsParticle.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleDepth.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleDepth.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodOcclusion.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodOcclusion.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/WeaponEffects/Models/RocketWarhead.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/WeaponEffects/Models/RocketWarhead.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/WeaponEffects/Models/ShellCasing.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/EffectExamples/WeaponEffects/Models/ShellCasing.FBX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Sprites.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Sprites/Info.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Sprites/Info.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Sprites/TitleBorder.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Sprites/TitleBorder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Sprites/UnityLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Sprites/UnityLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/BackgroundAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/BackgroundAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/CloudsAlpha.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/CloudsAlpha.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/CloudsNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/CloudsNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/CloudsOcclusion.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/CloudsOcclusion.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/DustPuffSmallParticleSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/DustPuffSmallParticleSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/StoneNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/StoneNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/fleshNormals.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/ParticlePack/Shared/Textures/fleshNormals.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency_Blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency_Blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency_Orange.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency_Orange.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency_Red.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency_Red.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency_White.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_AlbedoTransparency_White.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Arms_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency_Blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency_Blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency_Orange.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency_Orange.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency_Red.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency_Red.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency_White.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_AlbedoTransparency_White.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Body_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency_Blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency_Blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency_Orange.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency_Orange.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency_Red.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency_Red.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency_White.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_AlbedoTransparency_White.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/Textures/Armature_Legs_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/CapsuleVoxelProxy.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/CapsuleVoxelProxy.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/SphereIcosahedron.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/SphereIcosahedron.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/arrow_A.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/arrow_A.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cone_A.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cone_A.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cube_A.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cube_A.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cube_B.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cube_B.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cube_C.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cube_C.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cube_C_N.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/cube_C_N.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/emitterMesh_A.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/emitterMesh_A.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/icosahedron_A.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/icosahedron_A.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/octahedron_A.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/octahedron_A.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/plane_arc_A.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/plane_arc_A.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/plane_arc_B.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/plane_arc_B.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/pyramid_ref_point.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/pyramid_ref_point.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/rock_A.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/rock_A.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/rock_B.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/rock_B.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/semisphere.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/semisphere.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/soccerBall.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Models/soccerBall.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/BorderM.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/BorderM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/BulletHoleN.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/BulletHoleN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/DebrisD.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/DebrisD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/DebrisN.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/DebrisN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/HitExplosionN.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/HitExplosionN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/HitExplosionSmoke_2x2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/HitExplosionSmoke_2x2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/HitMasks.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/HitMasks.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/HitStreaks.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/HitStreaks.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/Lighting.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/Lighting.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/Lighting.tga" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/Lighting.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/ScorhmarkM.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/ScorhmarkM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/SmokePuff6x6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/SmokePuff6x6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/SmokeySteam8x8.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/SmokeySteam8x8.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/Tex_Vfx_SparklesA_8x8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/Tex_Vfx_SparklesA_8x8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/Tex_Vfx_TrailA.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/Tex_Vfx_TrailA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/checker-map_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/checker-map_512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/flash_A.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/flash_A.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/flash_B.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/flash_B.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/middle_line.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/middle_line.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/noise_01.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/noise_01.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/noise_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/noise_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/noise_A.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/noise_A.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/random_noise_256.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/random_noise_256.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/random_noise_256_blur.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/random_noise_256_blur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/random_noise_32_.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Art/VFX/Textures/random_noise_32_.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_01.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_01.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_02.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_02.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_03.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_03.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_04.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_04.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_05.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_05.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_06.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_06.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_07.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_07.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_08.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_08.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_09.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Footstep_09.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Land.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Footsteps And Landing/Player_Land.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/Player Shatter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/Player Shatter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/PlayerElimenatedCubes.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/PlayerElimenatedCubes.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/PlayerEliminated.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/PlayerEliminated.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/PlayerHit.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/PlayerHit.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/PlayerRespawn.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/Player/Hit Dead And Respawn/PlayerRespawn.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Audio/Clips/UI and HUD/CountdownBeep.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Audio/Clips/UI and HUD/CountdownBeep.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Runtime/Components/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Runtime/Components/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Fonts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Fonts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Fonts/LiberationSans.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Sprite Assets/InlineIcons.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Sprite Assets/InlineIcons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Sprite Assets/MixedIndexTest.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Sprite Assets/MixedIndexTest.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/TMP Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platformer/Audio/Clips/Coin.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platformer/Audio/Clips/Coin.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platformer/Audio/Clips/JumpPad.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platformer/Audio/Clips/JumpPad.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platformer/Audio/Clips/RotatingObstacleImpact.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platformer/Audio/Clips/RotatingObstacleImpact.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platformer/Audio/Clips/TeleportStart.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platformer/Audio/Clips/TeleportStart.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platformer/TestScenes/[BB] Platformer MS/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platformer/TestScenes/[BB] Platformer MS/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platformer/TestScenes/[BB] Platformer/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platformer/TestScenes/[BB] Platformer/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_AssaultRifle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_AssaultRifle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_GrenadeLauncher.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_GrenadeLauncher.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Handgun.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Handgun.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_HitReaction (2).fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_HitReaction (2).fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_HitReaction.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_HitReaction.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Reload.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Reload.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Shotgun.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Shotgun.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Strafe_L.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Strafe_L.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Strafe_R.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_Strafe_R.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_WallCollision.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_WallCollision.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_WeaponSwitch.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Animations/Armature_Shoot_WeaponSwitch.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Geo_blockKit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Geo_blockKit.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Geo_blockKit_COL.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Geo_blockKit_COL.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Tex_blockKit_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Tex_blockKit_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Tex_blockKit_ClownMask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Tex_blockKit_ClownMask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Tex_blockKit_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Tex_blockKit_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Tex_blockKit_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit/Tex_blockKit_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_Glowing/Tex_blockKitGlowing_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_Glowing/Tex_blockKitGlowing_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_Glowing/Tex_blockKitGlowing_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_Glowing/Tex_blockKitGlowing_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_Glowing/Tex_blockKitGlowing_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_Glowing/Tex_blockKitGlowing_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_NoStamp/Tex_blockKitNoStamp_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_NoStamp/Tex_blockKitNoStamp_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_NoStamp/Tex_blockKitNoStamp_ClownMask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_NoStamp/Tex_blockKitNoStamp_ClownMask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_NoStamp/Tex_blockKitNoStamp_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_NoStamp/Tex_blockKitNoStamp_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_NoStamp/Tex_blockKitNoStamp_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/BlockKit_NoStamp/Tex_blockKitNoStamp_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Blocker/Tex_Hex_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Blocker/Tex_Hex_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Blocker/Tex_perlin_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Blocker/Tex_perlin_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Blocker/geo_Blocker.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Blocker/geo_Blocker.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Geo_CircularTrampoline.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Geo_CircularTrampoline.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Tex_CircularTrampoline_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Tex_CircularTrampoline_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Tex_CircularTrampoline_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Tex_CircularTrampoline_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Tex_CircularTrampoline_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Tex_CircularTrampoline_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Tex_CircularTrampoline_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/CircularTrampoline/Tex_CircularTrampoline_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Collectible/Geo_Collectible.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Collectible/Geo_Collectible.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Collectible/Tex_Collectible_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Collectible/Tex_Collectible_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Collectible/Tex_Collectible_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Collectible/Tex_Collectible_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Collectible/Tex_Collectible_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Collectible/Tex_Collectible_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/ConnectorLightRailingKit/Geo_RailingLightConnector_Kit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/ConnectorLightRailingKit/Geo_RailingLightConnector_Kit.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/ConnectorLightRailingKit/Tex_ConnectorRailingLight_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/ConnectorLightRailingKit/Tex_ConnectorRailingLight_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/ConnectorLightRailingKit/Tex_ConnectorRailingLight_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/ConnectorLightRailingKit/Tex_ConnectorRailingLight_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/ConnectorLightRailingKit/Tex_ConnectorRailingLight_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/ConnectorLightRailingKit/Tex_ConnectorRailingLight_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Decals/Tex_Arrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Decals/Tex_Arrows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Decals/Tex_Blue_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Decals/Tex_Blue_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Decals/Tex_CheckeredFlag.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Decals/Tex_CheckeredFlag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Decals/Tex_Teleporter.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Decals/Tex_Teleporter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/FanVent/Tex_FanVent_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/FanVent/Tex_FanVent_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/FanVent/Tex_FanVent_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/FanVent/Tex_FanVent_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/FanVent/Tex_FanVent_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/FanVent/Tex_FanVent_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/FanVent/geo_FantVent.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/FanVent/geo_FantVent.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Geo_jumpPad.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Geo_jumpPad.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Tex_jumpPad_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Tex_jumpPad_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Tex_jumpPad_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Tex_jumpPad_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Tex_jumpPad_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Tex_jumpPad_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Tex_jumpPad_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/JumpPad/Tex_jumpPad_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/MovingPlatform/MovingPlatform_01_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/MovingPlatform/MovingPlatform_01_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/MovingPlatform/MovingPlatform_01_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/MovingPlatform/MovingPlatform_01_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/MovingPlatform/MovingPlatform_01_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/MovingPlatform/MovingPlatform_01_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/MovingPlatform/geo_MovingPlatformTop.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/MovingPlatform/geo_MovingPlatformTop.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Geo_RoundPlatformsColumns.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Geo_RoundPlatformsColumns.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Geo_RoundPlatformsColumns_COL.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Geo_RoundPlatformsColumns_COL.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/RoundHalfPlatform.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/RoundHalfPlatform.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Tex_RoundPlatformsColumns_01_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Tex_RoundPlatformsColumns_01_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Tex_RoundPlatformsColumns_01_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Tex_RoundPlatformsColumns_01_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Tex_RoundPlatformsColumns_01_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/RoundPlatformsColumns/Tex_RoundPlatformsColumns_01_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Geo_SpawnPad.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Geo_SpawnPad.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Geo_SpawnPad_COL.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Geo_SpawnPad_COL.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Glow_Emissive.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Glow_Emissive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Glow_Opacity.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Glow_Opacity.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Glow_SecondaryNoise_Opacity.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Glow_SecondaryNoise_Opacity.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Glow_SecondaryNoise_Repeat.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Glow_SecondaryNoise_Repeat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Gradient_Opacity.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Gradient_Opacity.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_SpawnPoint_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_SpawnPoint_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_SpawnPoint_Emissive.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_SpawnPoint_Emissive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_SpawnPoint_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_SpawnPoint_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_SpawnPoint_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_SpawnPoint_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Sprites_Opacity.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Sprites_Opacity.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Sprites_Opacity_A.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/SpawnPad/Tex_Sprites_Opacity_A.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Geo_Spinner.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Geo_Spinner.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Geo_Spinner_COL.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Geo_Spinner_COL.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Tex_Spinner_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Tex_Spinner_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Tex_Spinner_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Tex_Spinner_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Tex_Spinner_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Spinner/Tex_Spinner_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Geo_StairKit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Geo_StairKit.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Geo_StairKit_COL.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Geo_StairKit_COL.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Tex_StairKit_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Tex_StairKit_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Tex_StairKit_ClownMask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Tex_StairKit_ClownMask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Tex_StairKit_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Tex_StairKit_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Tex_StairKit_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/StairKit/Tex_StairKit_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Target/Geo_Target.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Target/Geo_Target.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Target/Tex_Target_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Target/Tex_Target_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Target/Tex_Target_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Target/Tex_Target_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Target/Tex_Target_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Target/Tex_Target_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Teleporter/Tex_Teleporter_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Teleporter/Tex_Teleporter_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Teleporter/Tex_Teleporter_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Teleporter/Tex_Teleporter_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_FloorPlane_1x1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_FloorPlane_1x1.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_SimpleWallsFloors.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_SimpleWallsFloors.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_WallPlane_1x2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_WallPlane_1x2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_WallPlane_2x0.2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_WallPlane_2x0.2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_WallPlane_2x0.4.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Geo_WallPlane_2x0.4.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_FloorTileable1x1_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_FloorTileable1x1_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_FloorTileable1x1_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_FloorTileable1x1_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_FloorTileable1x1_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_FloorTileable1x1_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x1_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x1_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x1_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x1_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x1_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x1_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x2_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x2_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x2_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x2_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x2_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/Tex_WallTileable1x2_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/TrimSheet_01_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/TrimSheet_01_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/TrimSheet_01_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/TrimSheet_01_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/TrimSheet_01_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Tileables/TrimSheet_01_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Trims/Geo_Trims.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/Trims/Geo_Trims.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Geo_WallKit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Geo_WallKit.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_FloorKit_ClownMask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_FloorKit_ClownMask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_WallKit_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_WallKit_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_WallKit_ClownMask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_WallKit_ClownMask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_WallKit_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_WallKit_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_WallKit_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WallFloorKit/Tex_WallKit_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Geo_WindowKit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Geo_WindowKit.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_Hex.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_Hex.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_WindowKit_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_WindowKit_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_WindowKit_ClownMask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_WindowKit_ClownMask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_WindowKit_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_WindowKit_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_WindowKit_SMEO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Environment/WindowKit/Tex_WindowKit_SMEO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Models/Bullet.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Models/Bullet.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Models/Laser.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Models/Laser.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Models/PlasmaBullet.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Models/PlasmaBullet.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Models/Rocket.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Models/Rocket.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/icon_grenadelauncher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/icon_grenadelauncher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/icon_handgun.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/icon_handgun.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/icon_rifle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/icon_rifle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/icon_shotgun.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/icon_shotgun.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_circularcross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_circularcross.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_cross.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_opencircular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_opencircular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_reload_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_reload_circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_tcross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Textures/reticle_tcross.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughAlbedo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughAlbedo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughAlbedo.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughAlbedo.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughAlbedo_3x3.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughAlbedo_3x3.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughNormal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughNormal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughNormal.tif" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/VFX/Textures/BulletHoleMetalThroughNormal.tif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/AssaultRifle/Geo_assaultRifle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/AssaultRifle/Geo_assaultRifle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/AssaultRifle/Tex_AssaultRifle_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/AssaultRifle/Tex_AssaultRifle_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/AssaultRifle/Tex_AssaultRifle_Emissive.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/AssaultRifle/Tex_AssaultRifle_Emissive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/AssaultRifle/Tex_AssaultRifle_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/AssaultRifle/Tex_AssaultRifle_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Geo_GrenadeLauncher.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Geo_GrenadeLauncher.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Tex_GrenadeLauncher_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Tex_GrenadeLauncher_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Tex_GrenadeLauncher_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Tex_GrenadeLauncher_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Tex_GrenadeLauncher_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Tex_GrenadeLauncher_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Tex_GrenadeLauncher_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/GrenadeLauncher/Tex_GrenadeLauncher_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Geo_handGun.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Geo_handGun.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Tex_handGun_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Tex_handGun_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Tex_handGun_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Tex_handGun_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Tex_handGun_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Tex_handGun_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Tex_handGun_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/HandGun/Tex_handGun_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Geo_RocketLauncher.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Geo_RocketLauncher.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Tex_RocketLauncher_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Tex_RocketLauncher_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Tex_RocketLauncher_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Tex_RocketLauncher_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Tex_RocketLauncher_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Tex_RocketLauncher_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Tex_RocketLauncher_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/RocketLauncher/Tex_RocketLauncher_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Geo_shotgun.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Geo_shotgun.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Tex_Shotgun_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Tex_Shotgun_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Tex_Shotgun_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Tex_Shotgun_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Tex_Shotgun_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Tex_Shotgun_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Tex_Shotgun_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/Shotgun/Tex_Shotgun_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Geo_SniperRifle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Geo_SniperRifle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Tex_SniperRifle_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Tex_SniperRifle_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Tex_SniperRifle_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Tex_SniperRifle_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Tex_SniperRifle_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Tex_SniperRifle_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Tex_SniperRifle_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Art/Weapons/SniperRifle/Tex_SniperRifle_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-001.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-001.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-002.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-002.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-003.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-003.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-004.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-004.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-005.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Target Hit/TargetHit-005.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Explode/Grenade Explode-001.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Explode/Grenade Explode-001.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Explode/Grenade Explode-002.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Explode/Grenade Explode-002.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Explode/Grenade Explode-003.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Explode/Grenade Explode-003.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Reload/Grenade Launcher_Reload.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Reload/Grenade Launcher_Reload.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/Grenade Launcher-001.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/Grenade Launcher-001.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/Grenade Launcher-002.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/Grenade Launcher-002.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/Grenade Launcher-003.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/Grenade Launcher-003.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/GrenadeLauncher_Shoot-001.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/GrenadeLauncher_Shoot-001.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/GrenadeLauncher_Shoot-002.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/GrenadeLauncher_Shoot-002.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/GrenadeLauncher_Shoot-003.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Grenade Launcher/Shoot/GrenadeLauncher_Shoot-003.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-001.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-001.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-002.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-002.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-003.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-003.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-004.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-004.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-005.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-005.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-006.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Impact/Impact-006.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Reload/Pistol_Reload.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Reload/Pistol_Reload.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Shoot/Pistol_Shoot-001.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Shoot/Pistol_Shoot-001.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Shoot/Pistol_Shoot-002.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Shoot/Pistol_Shoot-002.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Shoot/Pistol_Shoot-003.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Pistol/Shoot/Pistol_Shoot-003.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Rifle/Reload/rifle_reload.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Rifle/Reload/rifle_reload.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Rifle/Shoot/Rifle_Shoot-001.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Rifle/Shoot/Rifle_Shoot-001.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Rifle/Shoot/Rifle_Shoot-002.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Rifle/Shoot/Rifle_Shoot-002.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Rifle/Shoot/Rifle_Shoot-003.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Rifle/Shoot/Rifle_Shoot-003.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Shotgun/Reload/Shotgun_reload 1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Shotgun/Reload/Shotgun_reload 1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Shotgun/Shoot/Shotgun_Shoot-001.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Shotgun/Shoot/Shotgun_Shoot-001.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Shotgun/Shoot/Shotgun_Shoot-002.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Shotgun/Shoot/Shotgun_Shoot-002.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Shotgun/Shoot/Shotgun_Shoot-003.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/Audio/Clips/Weapons/Shotgun/Shoot/Shotgun_Shoot-003.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/TestScenes/[BB] Shooter MultiplayerSession/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/TestScenes/[BB] Shooter MultiplayerSession/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/TestScenes/[BB] Shooter MultiplayerSession/ReflectionProbe-1.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/TestScenes/[BB] Shooter MultiplayerSession/ReflectionProbe-1.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/TestScenes/[BB] Shooter/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/TestScenes/[BB] Shooter/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter/TestScenes/[BB] Shooter/ReflectionProbe-1.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter/TestScenes/[BB] Shooter/ReflectionProbe-1.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Thumbnail.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Thumbnail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="29" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;icode365&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/icode365/AshutoshBante_PS_Assignment.git&quot;,
+    &quot;accountId&quot;: &quot;71ee1c48-e958-4562-afd9-026d681d8f5e&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GlobalEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Player/Gravity/GravityController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Player/PlayerCharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3DTdptsJ66VaCQNMSAGuWXuxsEs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Personal\Assesmetn\PS\AshutoshBante_PS_Assignment -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Personal\Assesmetn\PS\AshutoshBante_PS_Assignment" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Personal\Assesmetn\PS\AshutoshBante_PS_Assignment -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Personal\Assesmetn\PS\AshutoshBante_PS_Assignment" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf66c854-a912-4a8e-bf9a-9c246fa48c45" name="Changes" comment="" />
+      <created>1778310183313</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778310183313</updated>
+      <workItem from="1778310187438" duration="9000" />
+      <workItem from="1778310382687" duration="8865000" />
+      <workItem from="1778330385653" duration="879000" />
+      <workItem from="1778337104985" duration="339000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

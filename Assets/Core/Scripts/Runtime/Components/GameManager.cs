@@ -2,7 +2,6 @@ using UnityEngine;
 using Unity.Netcode;
 using System.Collections;
 using UnityEngine.UIElements;
-using Blocks.Sessions.Common;
 using Unity.Services.Multiplayer;
 using System.Collections.Generic;
 using Cursor = UnityEngine.Cursor;
@@ -26,9 +25,9 @@ namespace Blocks.Gameplay.Core
         [Tooltip("If true, uses Unity Multiplayer Services for session management. If false, uses NetworkManager callbacks.")]
         [SerializeField] private bool isUsingMultiplayerServices = false;
 
-        [Header("Session Setup")]
-        [Tooltip("Configuration settings for the multiplayer session.")]
-        [SerializeField] private SessionSettings sessionSettings;
+        // [Header("Session Setup")]
+        // [Tooltip("Configuration settings for the multiplayer session.")]
+        // [SerializeField] private SessionSettings sessionSettings;
 
         [Tooltip("UI Document that displays session/lobby interface.")]
         [SerializeField] private UIDocument sessionUI;
@@ -109,20 +108,20 @@ namespace Blocks.Gameplay.Core
             {
                 Debug.LogError("[GameManager] SessionUI is not assigned.", this);
             }
-            if (sessionSettings == null)
-            {
-                Debug.LogError("[GameManager] SessionSettings is not assigned.", this);
-            }
-            if (sessionUI == null || sessionSettings == null)
-            {
-                return;
-            }
+            // if (sessionSettings == null)
+            // {
+            //     Debug.LogError("[GameManager] SessionSettings is not assigned.", this);
+            // }
+            // if (sessionUI == null || sessionSettings == null)
+            // {
+            //     return;
+            // }
 
             // Initialize Multiplayer Services session observer if enabled
             if (isUsingMultiplayerServices)
             {
-                m_SessionObserver = new SessionObserver(sessionSettings.sessionType);
-                m_SessionObserver.SessionAdded += OnSessionAdded;
+                // m_SessionObserver = new SessionObserver(sessionSettings.sessionType);
+                // m_SessionObserver.SessionAdded += OnSessionAdded;
             }
         }
 

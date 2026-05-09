@@ -57,7 +57,7 @@
       "dependencies": {}
     },
     "com.unity.ide.rider": {
-      "version": "3.0.39",
+      "version": "3.0.40",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -246,15 +246,15 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.nuget.newtonsoft-json": "3.2.2",
-        "com.unity.services.authentication": "3.6.0",
-        "com.unity.services.core": "1.16.0",
-        "com.unity.services.qos": "1.4.1",
-        "com.unity.services.wire": "1.4.1",
         "com.unity.transport": "2.6.0",
         "com.unity.collections": "2.2.1",
-        "com.unity.services.deployment": "1.7.1"
+        "com.unity.services.qos": "1.4.1",
+        "com.unity.services.core": "1.16.0",
+        "com.unity.services.wire": "1.4.1",
+        "com.unity.services.deployment": "1.7.1",
+        "com.unity.nuget.newtonsoft-json": "3.2.2",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.6.0"
       },
       "url": "https://packages.unity.com"
     },
