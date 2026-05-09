@@ -14,6 +14,7 @@ namespace Assignment.Scripts.Player.HUD
         [SerializeField] private RectTransform targetMarkerUI;
 
         [SerializeField] private Canvas canvas;
+        [SerializeField] private RectTransform canvasRect;
 
         private void Awake()
         {
@@ -47,14 +48,17 @@ namespace Assignment.Scripts.Player.HUD
         private void ShowTargetMarker()
         {
             arrowUI.gameObject.SetActive(false);
-
             targetMarkerUI.gameObject.SetActive(true);
 
-            Vector3 screenPosition =
-                mainCamera.WorldToScreenPoint(
-                    solver.GetViewportPosition());
+            Vector2 localPoint;
 
-            targetMarkerUI.position = screenPosition;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                canvasRect,
+                solver.ScreenPosition,
+                null,
+                out localPoint);
+
+            targetMarkerUI.localPosition = localPoint;
         }
 
         private void ShowDirectionArrow()
@@ -75,8 +79,8 @@ namespace Assignment.Scripts.Player.HUD
                 Mathf.Atan2(direction.y, direction.x)
                 * Mathf.Rad2Deg;
 
-            arrowUI.rotation =
-                Quaternion.Euler(0, 0, angle - 90f);
+            arrowUI.localRotation =
+                Quaternion.Euler(0, 0, angle);
         }
 
         private void HideAll()

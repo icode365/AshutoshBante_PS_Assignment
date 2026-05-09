@@ -14,6 +14,7 @@ namespace Assignment.Scripts.Player.HUD
         public bool IsTargetVisible { get; private set; }
 
         public Vector3 ViewportPosition { get; private set; }
+        public Vector3 ScreenPosition { get; private set; }
 
         private void OnEnable()
         {
@@ -42,6 +43,10 @@ namespace Assignment.Scripts.Player.HUD
         {
             ViewportPosition =
                 mainCamera.WorldToViewportPoint(
+                    currentTarget.transform.position);
+            
+            ScreenPosition =
+                mainCamera.WorldToScreenPoint(
                     currentTarget.transform.position);
 
             IsTargetVisible =
