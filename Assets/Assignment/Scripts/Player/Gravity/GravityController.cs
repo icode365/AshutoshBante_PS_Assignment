@@ -14,47 +14,88 @@ namespace Assignment.Scripts.Player.Gravity
 
         public void SetPendingGravity(Vector2 input)
         {
-            Vector3 currentUp =
-                -CurrentGravityDirection;
+            Vector3 currentGravity =
+                CurrentGravityDirection;
 
-            Vector3 currentRight =
-                Vector3.Cross(
-                    playerVisuals.forward,
-                    currentUp).normalized;
-
-            Vector3 currentForward =
-                Vector3.Cross(
-                    currentUp,
-                    currentRight).normalized;
+            Quaternion rotation =
+                Quaternion.identity;
 
             if (input == Vector2.up)
             {
-                PendingGravityDirection =
-                    -currentForward;
+                rotation =
+                    Quaternion.AngleAxis(
+                        90f,
+                        Vector3.right);
             }
             else if (input == Vector2.down)
             {
-                PendingGravityDirection =
-                    currentForward;
+                rotation =
+                    Quaternion.AngleAxis(
+                        -90f,
+                        Vector3.right);
             }
             else if (input == Vector2.left)
             {
-                PendingGravityDirection =
-                    -currentRight;
+                rotation =
+                    Quaternion.AngleAxis(
+                        90f,
+                        Vector3.forward);
             }
             else if (input == Vector2.right)
             {
-                PendingGravityDirection =
-                    currentRight;
+                rotation =
+                    Quaternion.AngleAxis(
+                        -90f,
+                        Vector3.forward);
             }
 
             PendingGravityDirection =
-                PendingGravityDirection.normalized;
+                rotation * currentGravity;
+
+            PendingGravityDirection =
+                SnapToWorldAxis(
+                    PendingGravityDirection);
 
             previewVisualizer.UpdatePreview(
                 PendingGravityDirection);
         }
 
+        private Vector3 SnapToWorldAxis(
+            Vector3 direction)
+        {
+            direction.Normalize();
+
+            Vector3[] axes =
+            {
+                Vector3.up,
+                Vector3.down,
+                Vector3.left,
+                Vector3.right,
+                Vector3.forward,
+                Vector3.back
+            };
+
+            float bestDot = -Mathf.Infinity;
+
+            Vector3 bestAxis = Vector3.down;
+
+            foreach (var axis in axes)
+            {
+                float dot =
+                    Vector3.Dot(
+                        direction,
+                        axis);
+
+                if (dot > bestDot)
+                {
+                    bestDot = dot;
+                    bestAxis = axis;
+                }
+            }
+
+            return bestAxis;
+        }
+        
         public void ApplyPendingGravity()
         {
             CurrentGravityDirection = PendingGravityDirection;

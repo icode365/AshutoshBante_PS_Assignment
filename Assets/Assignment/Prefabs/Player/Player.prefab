@@ -6767,7 +6767,7 @@ Transform:
   m_GameObject: {fileID: 5348229917088127828}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.249, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10364,10 +10364,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72c7cb40cab64c18a6dd0e5ca125759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.PlayerCharacterController
-  cameraTransform: {fileID: 2130805676189442566}
+  cameraTransform: {fileID: 7489275564539423786}
+  visuals: {fileID: 6478977083868756356}
   moveSpeed: 5
   jumpForce: 50
   rotationSpeed: 10
+  groundedGravityForce: 2
 --- !u!114 &1601626224227292456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10382,7 +10384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.Gravity.GravityController
   gravityStrength: 20
   previewVisualizer: {fileID: 8744098399030609380}
-  playerVisuals: {fileID: 6014888403753260705}
+  playerVisuals: {fileID: 6478977083868756356}
 --- !u!143 &6721508304903817823
 CharacterController:
   m_ObjectHideFlags: 0
@@ -10404,8 +10406,8 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_StepOffset: 0.1
+  m_SkinWidth: 0.03
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.92, z: 0}
 --- !u!54 &-5747261753281069599
@@ -10493,7 +10495,7 @@ MonoBehaviour:
   groundCheckOrigin: {fileID: 175243020538610014}
   gravityController: {fileID: 1601626224227292456}
   sphereRadius: 0.2
-  checkDistance: 0.5
+  checkDistance: 0.8
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
