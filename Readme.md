@@ -2,7 +2,7 @@
 
 A third-person gravity-based gameplay prototype built in Unity.
 
-The player navigates a constrained arena by collecting targets while dynamically changing gravity direction to traverse walls, ceilings, and different surfaces.
+The player navigates a constrained level by collecting targets while dynamically changing gravity direction to traverse walls, ceilings, and different surfaces.
 
 ---
 
@@ -38,6 +38,12 @@ The game ends when:
 | Jump                     | Space      |
 | Select Gravity Direction | Arrow Keys |
 | Apply Gravity            | Enter      |
+
+---
+
+# Playthrough
+
+[![Watch the video](Docs/Preview.gif)](https://youtu.be/nnRC-L-T9hc)
 
 ---
 
@@ -278,7 +284,6 @@ Handles:
 
 ```plaintext
 GameManager
-GlobalEventHandler
 
 Canvas
     GameplayUIController
@@ -303,17 +308,6 @@ Player
         Mesh
         Animator
         GravityPreviewHologram
-
-Arena
-    Floor
-    Walls
-    Ceiling
-    BoundaryTriggers
-
-Collectibles
-    Box_01
-    Box_02
-    Box_03
 ```
 
 ---
@@ -332,50 +326,10 @@ A custom SphereCast-based grounding system was implemented to support:
 
 ---
 
-## Why Physics.gravity Was Not Used
-
-Physics.gravity affects the entire scene globally.
-
-The player uses CharacterController movement, which does not automatically use Physics.gravity.
-
-A custom gravity velocity system was implemented instead.
-
----
-
-## Important Engineering Constraint
-
-Unity CharacterController is not designed for fully arbitrary gravity locomotion.
-
-To maintain stability:
-
-- Movement vectors are projected onto gravity-relative planes
-- Visual rotation is separated from gameplay movement
-- Only one Move() call occurs per frame
-
----
-
 # Known Limitations
 
 - Camera remains world-up stabilized
 - CharacterController is not truly arbitrary-gravity compatible
-- Extreme edge transitions may produce minor instability
-- No advanced slope handling
-- No moving platforms
-
----
-
-# Possible Future Improvements
-
-- Rigidbody-based locomotion system
-- Gravity-relative camera orbit
-- Smoother gravity transition animation
-- Advanced movement states
-- Checkpoint system
-- Audio feedback
-- Screen shake
-- Better VFX
-- Save/Load support
-- Mobile adaptation
 
 ---
 
@@ -388,18 +342,3 @@ To maintain stability:
 - TextMeshPro
 
 ---
-
-# Summary
-
-This prototype focuses on:
-
-- Gameplay systems architecture
-- Dynamic gravity traversal
-- Event-driven structure
-- Custom grounding logic
-- Third-person gameplay systems
-- UI feedback systems
-- Modular gameplay design
-
-The project demonstrates practical gameplay engineering approaches while working within Unity CharacterController limitations.
-
