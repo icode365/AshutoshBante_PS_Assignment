@@ -6742,6 +6742,37 @@ Transform:
   - {fileID: 5853193289807865313}
   m_Father: {fileID: 8254911961066266197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5348229917088127828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175243020538610014}
+  m_Layer: 0
+  m_Name: GroundCheckOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &175243020538610014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348229917088127828}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.249, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6014888403753260705}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5381385347960947260
 GameObject:
   m_ObjectHideFlags: 0
@@ -8485,6 +8516,7 @@ MonoBehaviour:
   arrowUI: {fileID: 6217707555181784481}
   targetMarkerUI: {fileID: 3725583795842423109}
   canvas: {fileID: 27158334482332351}
+  canvasRect: {fileID: 0}
 --- !u!1 &6461874584747003726
 GameObject:
   m_ObjectHideFlags: 0
@@ -8589,6 +8621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 63745954037680538}
+  - component: {fileID: 7342689993589123775}
   m_Layer: 0
   m_Name: Exo Gray
   m_TagString: Untagged
@@ -8620,6 +8653,28 @@ Transform:
   - {fileID: 1260613557518358232}
   m_Father: {fileID: 6478977083868756356}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!95 &7342689993589123775
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706157336442395212}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e45b983b5ee261b40958982a5e041022, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6739646735227671745
 GameObject:
   m_ObjectHideFlags: 0
@@ -10257,6 +10312,8 @@ GameObject:
   - component: {fileID: -5747261753281069599}
   - component: {fileID: 3858000624803918756}
   - component: {fileID: 555710211792226897}
+  - component: {fileID: -3946709020919478583}
+  - component: {fileID: 8544343720259386085}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10280,6 +10337,7 @@ Transform:
   - {fileID: 6478977083868756356}
   - {fileID: 7489275564539423786}
   - {fileID: 1235523615816098012}
+  - {fileID: 175243020538610014}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5995566667793272688
@@ -10308,7 +10366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.PlayerCharacterController
   cameraTransform: {fileID: 2130805676189442566}
   moveSpeed: 5
-  jumpForce: 8
+  jumpForce: 50
   rotationSpeed: 10
 --- !u!114 &1601626224227292456
 MonoBehaviour:
@@ -10403,6 +10461,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerReferences
   mainCamera: {fileID: 701565998747705903}
   targetDirectionSolver: {fileID: 3858000624803918756}
+--- !u!114 &-3946709020919478583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373688574302788555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b8e116d27435dbe940b7ae6385846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.Animation.PlayerAnimationHandler
+  animator: {fileID: 7342689993589123775}
+  groundDetector: {fileID: 8544343720259386085}
+  inputHandler: {fileID: 5995566667793272688}
+  fallingVelocityThreshold: -2
+--- !u!114 &8544343720259386085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373688574302788555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dacbf110b1321642bd15ea68a4d4342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.GroundDetector
+  groundCheckOrigin: {fileID: 175243020538610014}
+  gravityController: {fileID: 1601626224227292456}
+  sphereRadius: 0.2
+  checkDistance: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &8420238931855927721
 GameObject:
   m_ObjectHideFlags: 0
