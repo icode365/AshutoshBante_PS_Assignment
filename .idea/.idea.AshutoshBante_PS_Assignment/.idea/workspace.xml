@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf66c854-a912-4a8e-bf9a-9c246fa48c45" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/UI/GameplayEndScreenUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/UI/GameplayEndScreenUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assignment/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/Gravity/GravityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/Gravity/GravityController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/BoxCollectionGameplayHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/BoxCollectionGameplayHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GlobalEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GlobalEventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/GroundDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/GroundDetector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/HUD/TargetDirectionSolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/HUD/TargetDirectionSolver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assignment/Scripts/Player/PlayerCharacterController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/Bounds/OutOfBoundsPredictor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/BoxCollectible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/BoxCollectionGameplayHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Gameplay/UI/GameplayEndScreenUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Managers/GlobalEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/Player/Animation.meta" root0="FORCE_HIGHLIGHTING" />
@@ -151,7 +160,7 @@
       <workItem from="1778310382687" duration="8865000" />
       <workItem from="1778330385653" duration="879000" />
       <workItem from="1778337104985" duration="10677000" />
-      <workItem from="1778388059873" duration="8766000" />
+      <workItem from="1778388059873" duration="13369000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -209,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778392635906</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="gravity controller bugs fixed">
+      <option name="closed" value="true" />
+      <created>1778402723232</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1778402723232</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +249,8 @@
     <MESSAGE value="added player animations" />
     <MESSAGE value="added custom ground detection logic" />
     <MESSAGE value="added relative gravity direction change instead of world direction" />
-    <option name="LAST_COMMIT_MESSAGE" value="added relative gravity direction change instead of world direction" />
+    <MESSAGE value="gravity controller bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="gravity controller bugs fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

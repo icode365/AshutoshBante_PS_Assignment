@@ -6751,6 +6751,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 175243020538610014}
+  - component: {fileID: 7767020403759853297}
   m_Layer: 0
   m_Name: GroundCheckOrigin
   m_TagString: Untagged
@@ -6767,12 +6768,31 @@ Transform:
   m_GameObject: {fileID: 5348229917088127828}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1.119, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6014888403753260705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7767020403759853297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348229917088127828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dacbf110b1321642bd15ea68a4d4342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.GroundDetector
+  groundCheckOrigin: {fileID: 175243020538610014}
+  gravityController: {fileID: 1601626224227292456}
+  sphereRadius: 0.2
+  checkDistance: 2.7
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &5381385347960947260
 GameObject:
   m_ObjectHideFlags: 0
@@ -10313,7 +10333,6 @@ GameObject:
   - component: {fileID: 3858000624803918756}
   - component: {fileID: 555710211792226897}
   - component: {fileID: -3946709020919478583}
-  - component: {fileID: 8544343720259386085}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10404,7 +10423,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 1
   m_SlopeLimit: 45
   m_StepOffset: 0.1
   m_SkinWidth: 0.03
@@ -10477,28 +10496,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.Animation.PlayerAnimationHandler
   animator: {fileID: 7342689993589123775}
-  groundDetector: {fileID: 8544343720259386085}
+  groundDetector: {fileID: 7767020403759853297}
   inputHandler: {fileID: 5995566667793272688}
   fallingVelocityThreshold: -2
---- !u!114 &8544343720259386085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8373688574302788555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dacbf110b1321642bd15ea68a4d4342, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.GroundDetector
-  groundCheckOrigin: {fileID: 175243020538610014}
-  gravityController: {fileID: 1601626224227292456}
-  sphereRadius: 0.2
-  checkDistance: 0.8
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!1 &8420238931855927721
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,7 +41,7 @@ namespace Assignment.Scripts.Player
                 GetComponent<PlayerInputHandler>();
 
             _groundDetector =
-                GetComponent<GroundDetector>();
+                GetComponentInChildren<GroundDetector>();
         }
 
         private void Update()

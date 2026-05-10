@@ -12,8 +12,8 @@ public static class GlobalEventHandler
 
     public static Action OnPlayerOutOfBounds;
 
-    public static Action OnGravityApplied;
-
+    public static Action<int, int> CollectionUIInitialized;
     public static Action<BoxCollectible> OnBoxCollected;
+    public static Action OnAllBoxCollected;
     public static Action<BoxCollectible> OnTargetChanged;
 }

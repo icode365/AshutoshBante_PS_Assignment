@@ -31,12 +31,16 @@ namespace Assignment.Scripts.Managers
 
         private void SubscribeEvents()
         {
+            GlobalEventHandler.OnAllBoxCollected += OnGameWon;
+            
             GlobalEventHandler.OnCountdownEnded += HandleCountdownEnded;
             GlobalEventHandler.OnPlayerOutOfBounds += OnPlayerOutOfBounds;
         }
 
         private void UnsubscribeEvents()
         {
+            GlobalEventHandler.OnAllBoxCollected -= OnGameWon;
+            
             GlobalEventHandler.OnCountdownEnded -= HandleCountdownEnded;
             GlobalEventHandler.OnPlayerOutOfBounds -= OnPlayerOutOfBounds;
         }
@@ -76,6 +80,15 @@ namespace Assignment.Scripts.Managers
             // Disable input
             // Show UI
             // Stop gameplay
+        }
+
+        private void OnGameWon()
+        {
+            var collected = gameplayHandler.Collected;
+            var total = gameplayHandler.TotalCollectibles;
+            
+            Debug.Log($"Collected {collected} out of {total} boxes");
+            Debug.Log("GAME Won");
         }
     }
 }

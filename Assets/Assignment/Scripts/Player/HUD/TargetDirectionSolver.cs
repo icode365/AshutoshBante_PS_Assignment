@@ -9,7 +9,7 @@ namespace Assignment.Scripts.Player.HUD
 
         private BoxCollectible currentTarget;
 
-        public bool HasTarget => currentTarget != null;
+        public bool HasTarget => currentTarget != null && !currentTarget.IsCollected;
 
         public bool IsTargetVisible { get; private set; }
 

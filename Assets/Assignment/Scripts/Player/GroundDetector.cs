@@ -33,10 +33,22 @@ namespace Assignment.Scripts.Player
             Vector3 gravityDirection =
                 gravityController.CurrentGravityDirection;
 
+            Vector3 origin =
+                transform.position -
+                gravityDirection * 1f;
+
+#if UNITY_EDITOR
+
+            Gizmos.color =
+                IsGrounded ? Color.green : Color.red;
+            Debug.DrawRay(
+                origin,
+                gravityDirection * checkDistance,
+                Color.red);
+#endif
             bool hit =
-                Physics.SphereCast(
-                    groundCheckOrigin.position,
-                    sphereRadius,
+                Physics.Raycast(
+                    origin,
                     gravityDirection,
                     out RaycastHit hitInfo,
                     checkDistance,
@@ -47,32 +59,12 @@ namespace Assignment.Scripts.Player
             if (hit)
             {
                 GroundHit = hitInfo;
-
                 GroundNormal = hitInfo.normal;
             }
             else
             {
                 GroundNormal = Vector3.up;
             }
-        }
-
-        private void OnDrawGizmosSelected()
-        {
-            if (groundCheckOrigin == null)
-                return;
-
-            Gizmos.color =
-                IsGrounded ? Color.green : Color.red;
-
-            Vector3 direction =
-                gravityController != null
-                    ? gravityController.CurrentGravityDirection
-                    : Vector3.down;
-
-            Gizmos.DrawWireSphere(
-                groundCheckOrigin.position +
-                direction * checkDistance,
-                sphereRadius);
         }
     }
 }
