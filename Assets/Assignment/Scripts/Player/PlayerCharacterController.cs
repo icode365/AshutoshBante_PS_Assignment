@@ -7,9 +7,9 @@ namespace Assignment.Scripts.Player
     [RequireComponent(typeof(CharacterController))]
     public class PlayerCharacterController : MonoBehaviour
     {
-        [Header("References")] [SerializeField]
-        private Transform cameraTransform;
+        [Header("References")] 
         [SerializeField] private Transform visuals;
+        [SerializeField] private Transform cameraTransform;
 
         private ThirdPersonCameraController _cameraController;
         private CharacterController _characterController;
@@ -17,11 +17,13 @@ namespace Assignment.Scripts.Player
         private PlayerInputHandler _inputHandler;
         private GroundDetector _groundDetector;
 
-        [Header("Movement")] [SerializeField] private float moveSpeed = 5f;
+        [Header("Movement")] 
         [SerializeField] private float jumpForce = 8f;
         [SerializeField] private float rotationSpeed = 10f;
         [SerializeField] private float groundedGravityForce = 2f;
-
+        [SerializeField] private float moveSpeed = 5f;
+        
+        private bool _isJumping;
         private Vector3 _velocity;
         private Vector3 _moveVelocity;
         private Vector3 _gravityVelocity;
@@ -47,13 +49,9 @@ namespace Assignment.Scripts.Player
         private void Update()
         {
             HandleMovement();
-
             ApplyGravity();
-
             MoveCharacter();
-
             AlignToGravity();
-
             RotateVisuals();
         }
 
@@ -134,7 +132,7 @@ namespace Assignment.Scripts.Player
 
         private void ApplyGravity()
         {
-            if (_groundDetector.IsGrounded)
+            if (_groundDetector.IsGrounded && !_isJumping)
             {
                 _gravityVelocity =
                     _gravityController.CurrentGravityDirection *
@@ -145,6 +143,24 @@ namespace Assignment.Scripts.Player
                 _gravityVelocity +=
                     _gravityController.GravityForce *
                     Time.deltaTime;
+            }
+            
+            CheckJumpExit();
+        }
+        
+        private void CheckJumpExit()
+        {
+            Vector3 gravityDirection =
+                _gravityController.CurrentGravityDirection;
+
+            float verticalVelocity =
+                Vector3.Dot(
+                    _gravityVelocity,
+                    -gravityDirection);
+
+            if (verticalVelocity <= 0f)
+            {
+                _isJumping = false;
             }
         }
 
@@ -162,6 +178,8 @@ namespace Assignment.Scripts.Player
             if (!_groundDetector.IsGrounded)
                 return;
 
+            _isJumping = true;
+            
             _gravityVelocity =
                 -_gravityController.CurrentGravityDirection *
                 jumpForce;

@@ -16,4 +16,6 @@ public static class GlobalEventHandler
     public static Action<BoxCollectible> OnBoxCollected;
     public static Action OnAllBoxCollected;
     public static Action<BoxCollectible> OnTargetChanged;
+
+    public static Action RestartGameClicked;
 }

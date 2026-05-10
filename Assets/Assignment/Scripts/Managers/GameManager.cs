@@ -1,18 +1,21 @@
 using Assignment.Scripts.Gameplay;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Assignment.Scripts.Managers
 {
     public class GameManager : MonoBehaviour
     {
-        [Header("References")] 
-        [SerializeField] private CountdownHandler countdownHandler;
+        [Header("References")] [SerializeField]
+        private CountdownHandler countdownHandler;
+
         [SerializeField] private BoxCollectionGameplayHandler gameplayHandler;
-        
+
         [Header("Player")] [SerializeField] private GameObject playerPrefab;
         [SerializeField] private Transform spawnPoint;
-        
-        private GameObject currentPlayer;
+
+        private GameObject _currentPlayer;
 
         private void Start()
         {
@@ -32,63 +35,59 @@ namespace Assignment.Scripts.Managers
         private void SubscribeEvents()
         {
             GlobalEventHandler.OnAllBoxCollected += OnGameWon;
-            
-            GlobalEventHandler.OnCountdownEnded += HandleCountdownEnded;
+            GlobalEventHandler.RestartGameClicked += Restart;
             GlobalEventHandler.OnPlayerOutOfBounds += OnPlayerOutOfBounds;
         }
 
         private void UnsubscribeEvents()
         {
             GlobalEventHandler.OnAllBoxCollected -= OnGameWon;
-            
-            GlobalEventHandler.OnCountdownEnded -= HandleCountdownEnded;
+            GlobalEventHandler.RestartGameClicked -= Restart;
             GlobalEventHandler.OnPlayerOutOfBounds -= OnPlayerOutOfBounds;
         }
 
         private void SpawnPlayer()
         {
-            currentPlayer = Instantiate(
+            _currentPlayer = Instantiate(
                 playerPrefab,
                 spawnPoint.position,
                 spawnPoint.rotation);
 
-            var playerRef = currentPlayer.GetComponent<PlayerReferences>();
+            var playerRef = _currentPlayer.GetComponent<PlayerReferences>();
             GlobalEventHandler.OnPlayerSpawned?.Invoke(playerRef);
-        }
-
-        private void HandleCountdownEnded()
-        {
-            Debug.Log("GAME OVER");
-
-            // Future:
-            // Disable input
-            // Show UI
-            // Stop gameplay
         }
 
         private void OnPlayerOutOfBounds()
         {
             Debug.Log("GAME OVER");
 
-            CharacterController controller =
-                currentPlayer.GetComponent<CharacterController>();
-
-            if (controller != null)
-                controller.enabled = false;
-            
-            // Future:
-            // Disable input
-            // Show UI
-            // Stop gameplay
+            DisablePlayerInput();
         }
 
         private void OnGameWon()
         {
             var collected = gameplayHandler.Collected;
             var total = gameplayHandler.TotalCollectibles;
-            
+
+            countdownHandler.StopCountdown();
+            DisablePlayerInput();
+
             Debug.Log($"Collected {collected} out of {total} boxes");
             Debug.Log("GAME Won");
+        }
+
+        private void DisablePlayerInput()
+        {
+            var playerInput =
+                _currentPlayer.GetComponent<PlayerInput>();
+
+            if (playerInput != null)
+                playerInput.enabled = false;
+        }
+
+        private void Restart()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

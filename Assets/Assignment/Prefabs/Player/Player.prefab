@@ -10383,12 +10383,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72c7cb40cab64c18a6dd0e5ca125759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.PlayerCharacterController
-  cameraTransform: {fileID: 7489275564539423786}
   visuals: {fileID: 6478977083868756356}
-  moveSpeed: 5
-  jumpForce: 50
+  cameraTransform: {fileID: 7489275564539423786}
+  jumpForce: 10
   rotationSpeed: 10
   groundedGravityForce: 2
+  moveSpeed: 5
 --- !u!114 &1601626224227292456
 MonoBehaviour:
   m_ObjectHideFlags: 0

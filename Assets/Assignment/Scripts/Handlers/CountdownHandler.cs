@@ -7,8 +7,6 @@ public class CountdownHandler : MonoBehaviour
     private float currentTime;
     private bool isRunning;
 
-    public float CurrentTime => currentTime;
-
     private void Update()
     {
         if (!isRunning)
