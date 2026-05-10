@@ -14,6 +14,7 @@ namespace Assignment.Scripts.Player
         private CharacterController _characterController;
         private GravityController _gravityController;
         private PlayerInputHandler _inputHandler;
+        private GroundDetector _groundDetector;
 
         [Header("Movement")] [SerializeField] private float moveSpeed = 5f;
 
@@ -28,6 +29,7 @@ namespace Assignment.Scripts.Player
             _characterController = GetComponent<CharacterController>();
             _gravityController = GetComponent<GravityController>();
             _inputHandler = GetComponent<PlayerInputHandler>();
+            _groundDetector = GetComponent<GroundDetector>();
         }
 
 
@@ -114,7 +116,7 @@ namespace Assignment.Scripts.Player
 
             _characterController.Move(_velocity * Time.deltaTime);
 
-            if (_characterController.isGrounded)
+            if (_groundDetector.IsGrounded)
             {
                 _velocity = Vector3.zero;
             }
@@ -122,7 +124,7 @@ namespace Assignment.Scripts.Player
 
         private void Jump()
         {
-            if (!_characterController.isGrounded)
+            if (!_groundDetector.IsGrounded)
                 return;
 
             _velocity = -_gravityController.CurrentGravityDirection * jumpForce;
