@@ -10382,6 +10382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.Gravity.GravityController
   gravityStrength: 20
   previewVisualizer: {fileID: 8744098399030609380}
+  playerVisuals: {fileID: 6014888403753260705}
 --- !u!143 &6721508304903817823
 CharacterController:
   m_ObjectHideFlags: 0
