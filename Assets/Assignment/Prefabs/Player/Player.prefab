@@ -5665,7 +5665,7 @@ GameObject:
   - component: {fileID: 7489275564539423786}
   - component: {fileID: 8511663360038976697}
   m_Layer: 0
-  m_Name: CameraPivot
+  m_Name: CameraRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5700,9 +5700,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Scripts.Player.Camera.ThirdPersonCameraController
   target: {fileID: 6014888403753260705}
+  cameraTransform: {fileID: 2130805676189442566}
   offset: {x: 0, y: 3, z: 6}
   followSmoothness: 10
   rotationSpeed: 120
+  rotationSmoothness: 12
   minPitch: -30
   maxPitch: 60
 --- !u!1 &4392309230511041124
