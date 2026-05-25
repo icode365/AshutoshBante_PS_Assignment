@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf66c854-a912-4a8e-bf9a-9c246fa48c45" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AshutoshBante_PS_Assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AshutoshBante_PS_Assignment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="cf66c854-a912-4a8e-bf9a-9c246fa48c45" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="42" />
+    <option name="cachedIndexableFilesCount" value="57" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -163,6 +160,7 @@
       <workItem from="1778388059873" duration="13487000" />
       <workItem from="1778425095614" duration="7006000" />
       <workItem from="1778470550021" duration="790000" />
+      <workItem from="1778657735266" duration="1532000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -268,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778436288222</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added camera oriantation to follow player's gravity change.">
+      <option name="closed" value="true" />
+      <created>1778658701605</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1778658701605</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +303,8 @@
     <MESSAGE value="added documentation" />
     <MESSAGE value="added MacOS and Windows Build" />
     <MESSAGE value="added playthrough recordings" />
-    <option name="LAST_COMMIT_MESSAGE" value="added playthrough recordings" />
+    <MESSAGE value="added camera oriantation to follow player's gravity change." />
+    <option name="LAST_COMMIT_MESSAGE" value="added camera oriantation to follow player's gravity change." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
